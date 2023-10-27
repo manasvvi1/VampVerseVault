@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-in</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-md-6 offset-md-3 text-center">
+                <div class="p-4">
+                    <img src="images/logo-without-title.png" alt="logo" style="width: 40%;">
+                </div>
+                <form class="rounded bg-black shadow p-3">
+                    <h3 class="text-light fw-bolder fs-4">Sign in to VampVerseVault</h3>
+                    <div class="fw-normal text-muted mb-4">
+                        <p class="text-light d-inline">Dont have an account? </p>
+                        <a href="sign-up.html" class="text-primary fw-bold text-decoration-none">Create an Account</a>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="mt-2 text-end">
+                        <a href="#" class="text-primary fw-bold text-decoration-none">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-button w-100 my-4">Sign-in</button>
+                    <p class="text-center text-uppercase mb-3 text-light">or</p>
+                    <a href="#" class="btn btn-light signin-with w-50 me-3">
+                        <img src="images/google-icon.svg" alt="googleicon" class="me-3">Sign-in with Google
+                    </a>
+                </form>
+            </div>
+        </div>
+        <script src="bootstrap.bundle.min.js"></script>
+    </body>
+</html>
