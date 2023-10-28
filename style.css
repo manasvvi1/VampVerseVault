@@ -285,3 +285,7 @@
   main{
     margin-top: 100px;
   }
+
+  .small-text{
+    font-size: small;
+  }

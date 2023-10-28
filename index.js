@@ -14,12 +14,12 @@ function scrollFunction() {
 // var signInItem = document.getElementById("sign-in-menu-item");
 
 function profile_signed_in(){
-  isSignin = true;
+  // isSignin = true;
   window.open('index.html');
 }
 
 function profile_signed_out(){
-  isSignin = false;
+  // isSignin = false;
   window.open('index.html');
 }
 
