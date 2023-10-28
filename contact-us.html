@@ -14,7 +14,7 @@
             <a href="index.html"><img src="images/logo-square-without-title.png" class="logo" id="logo" height="50" width="50"></a>
             <div>
                 <ul id="navbar">
-                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="dropdown">
                         <a href="#">Shop By Category </a>
                         <ul class="dropdown-content">
@@ -40,59 +40,71 @@
                     </li>
                     <li><a href="TrackOrder.html">Track Your Order</a></li>
                     <li><a href="AllProducts.html">All Products</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="contact-us.html" class="active" >Contact Us</a></li>
                     <li><a href="sign-in.html">Sign in</a></li>
                     <li><a href="Cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 </ul>
             </div>
         </section>
-        <!--Contact us-->
-        <div id="contact-us" class="container w-100">
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="text-dark fw-bolder fs-4">Contact Us</h3>
-                    <div class="p-5">
-                        <div class="row">
-                            <i class="fa fa-map-marker col-2" style="font-size: 24px; color: #465b52;"></i>
-                            <p class="col-10"> Vamp Verse Vault, James Church, New Church Rd, Opp. St, Kashmere Gate, New Delhi, Delhi 110006</p>
+        <main class="p-5">
+            <div id="about-us" class="container w-100">
+                <h3 class="text-dark fw-bolder fs-4">About Us</h3>
+                        <div class="p-5">
+                            Welcome to VampVerseVault, the nocturnal haven for all your vampiric desires. At VampShop, we've plunged deep into the shadows to curate an extensive collection of products that cater to those who are drawn to the dark side. Our e-commerce platform offers a bewitching array of vampire-themed items that let you embrace your inner immortal.
                         </div>
-                        <div class="row">
-                            <i class="fa fa-phone col-2" style="font-size:24px; color: #465b52;"></i>
-                            <p class="col-10">1800 5220 5220</p>
+                        <h3 class="text-dark fw-bolder fs-4">Our Mission</h3>
+                        <div class="p-5">
+                            At VampVerseVault, we are on a mission to bring the mystical world of vampires closer to your heart. We believe that embracing your dark side is a celebration of individuality. Our products are not just items you purchase; they're extensions of your identity and your love for the extraordinary.<br>Join us on this immortal journey. Discover the allure of the night, and satisfy your deepest, darkest desires with VampShop.
                         </div>
-                        <div class="row">
-                            <i class="fa fa-envelope col-2" style="font-size:24px; color: #465b52;"></i>
-                            <a href="mailto:support@vampversevault.com" class="text-dark col-10">support@vampversevault.com</a>
+            </div>
+            <!--Contact us-->
+            <div id="contact-us" class="container w-100">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="text-dark fw-bolder fs-4">Contact Us</h3>
+                        <div class="p-5">
+                            <div class="row">
+                                <i class="fa fa-map-marker col-2" style="font-size: 24px; color: #465b52;"></i>
+                                <p class="col-10"> Vamp Verse Vault, James Church, New Church Rd, Opp. St, Kashmere Gate, New Delhi, Delhi 110006</p>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-phone col-2" style="font-size:24px; color: #465b52;"></i>
+                                <p class="col-10">1800 5220 5220</p>
+                            </div>
+                            <div class="row">
+                                <i class="fa fa-envelope col-2" style="font-size:24px; color: #465b52;"></i>
+                                <a href="mailto:support@vampversevault.com" class="text-dark col-10">support@vampversevault.com</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <form class="rounded bg-black shadow p-3">
-                        <h3 class="text-light fw-bolder fs-4 text-center">Write to Us!</h3>
-                        <div class="fw-normal text-muted mb-4 text-center">
-                            <p class="text-light d-inline">We'll get back to you soon. </p>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="first-name" class="form-control" id="first-name" placeholder="first-name">
-                            <label for="first-name">First Name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="last-name" class="form-control" id="last-name" placeholder="last-name">
-                            <label for="last-name">Last Name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                            <label for="email">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea name="message" class="form-control" id="message" rows="5" placeholder="message"></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-button w-100 my-4">Send</button>
-                    </form>
+                    <div class="col-6">
+                        <form class="rounded bg-black shadow p-3">
+                            <h3 class="text-light fw-bolder fs-4 text-center">Write to Us!</h3>
+                            <div class="fw-normal text-muted mb-4 text-center">
+                                <p class="text-light d-inline">We'll get back to you soon. </p>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="first-name" class="form-control" id="first-name" placeholder="first-name">
+                                <label for="first-name">First Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="last-name" class="form-control" id="last-name" placeholder="last-name">
+                                <label for="last-name">Last Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea name="message" class="form-control" id="message" rows="5" placeholder="message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-button w-100 my-4">Send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
         <!-- <script src="title-bar.js"></script> -->
         <script src="bootstrap.bundle.min.js"></script>
     </body>
