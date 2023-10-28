@@ -74,7 +74,8 @@
     background-image: linear-gradient(black, #3D0000);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
   }
@@ -278,4 +279,8 @@
   #banner button:hover{
     background-color: #950101;
     color: white;
+  }
+
+  #contact-us{
+    margin-top: 150px;
   }
