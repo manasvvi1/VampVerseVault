@@ -61,6 +61,18 @@
     transition: 0.2s;
   }
   
+  button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+  }
+
   body {
     width: 100%;
   }
@@ -288,4 +300,112 @@
 
   .small-text{
     font-size: small;
+  }
+
+  #sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items:flex-start;
+    padding : 30px;
+    background-image: url(images/moonstone-ring.jpeg);
+    min-width: 540px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  #sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items:flex-start;
+    padding : 30px;
+    background-image: url(images/journal-for-banner.jpeg);
+    width: 300px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+  }
+
+  #sm-banner h4{
+    padding-bottom: 7px;
+    color: whitesmoke;
+  }
+  #sm-banner h2{
+    padding-bottom: 7px;
+    color: #FF0000;
+  }
+  #sm-banner span{
+    padding-bottom: 15px;
+    color: whitesmoke;
+  }
+
+  #sm-banner .banner-box:hover button{
+    background-color: #950101;
+    border: 1px solid;
+    cursor: pointer;
+  }
+
+  #newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #3D0000;
+  }
+
+  #newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+  }
+  #newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #febdbdf5;
+  }
+  #newsletter span{
+    color: #FF0000;
+  }
+
+  #newsletter .form{
+    display: flex;
+    width: 40%;
+  }
+
+  #newsletter input{
+    height: 2rem;
+    padding: 0 0.5em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #newsletter button{
+    background-color: #950101;
+    color: whitesmoke;
+    white-space: nowrap;
+    height: 2rem;
+    padding: 0.5em 0.5em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  #newsletter button:hover{
+    color: #FF0000;
+    cursor: pointer;
   }
