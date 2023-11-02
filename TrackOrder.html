@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VampVerseVault: Order Tracking</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <style>
+     
+      body {
+        background-color: #aa5656; 
+        color: #ff0000; 
+      }
+      #about-us {
+        background-color: #3d0000; 
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .form-control {
+        background-color: #000000; 
+        color: #ff0000; 
+        border-color: #950101; 
+      }
+      .form-control::placeholder {
+        color: #8b8b8b;
+        color: #ff0000; 
+      }
+      .btn-primary:hover {
+        background-color: #ff0000; 
+        border-color: #ff0000;
+        color: #000000; 
+      }
+      #orderInfo {
+        display: none; 
+      }
+      .order-details {
+        background-color: #3d0000; 
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .product-image {
+        width: 40%;
+        height: 350px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <a href="index.html"
+        ><img
+          src="images/logo-square-without-title.png"
+          class="logo"
+          id="logo"
+          height="50"
+          width="50"
+      /></a>
+      <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Shop By Category </a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Blood</a></li>
+                    <li><a href="#">Daylight Bracelets</a></li>
+                    <li><a href="#">Daylight rings</a></li>
+                    <li><a href="#">Daylight Pendants</a></li>
+                    <li><a href="#">Vervain Proof Jackets</a></li>
+                    <li><a href="#">Vervain Proof Boots</a></li>
+                    <li><a href="#">Wolfsbane Proof Jackets</a></li>
+                    <li><a href="#">Wolfsbane Proof Boots</a></li>
+                    <li><a href="#">Apothecary</a></li>
+                    <li><a href="#">Klaus's Blood</a></li>
+                    <li><a href="#">Wooden Stake</a></li>
+                    <li><a href="#">White oak</a></li>
+                    <li><a href="#">Silver Dagger</a></li>
+                    <li><a href="#">Journals</a></li>
+                    <li><a href="#">Gilbert Rings</a></li>
+                    <li><a href="#">Traveler's knife</a></li>
+                    <li><a href="#">Vampire Compass</a></li>
+
+                </ul>
+            </li>
+            <li><a href="TrackOrder.html" class="active">Track Your Order</a></li>
+            <li><a href="AllProducts.html">All Products</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="sign-in.html">Sign in</a></li>
+            <li><a href="Cart.html"><i class="far fa-shopping-bag"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <main>
+      <div id="about-us" class="container w-100">
+        <h3 class="text-danger fw-bolder fs-4 text-center">Order Tracking</h3>
+        <div>
+          <form id="trackingForm">
+            <div class="mb-3">
+              <label for="orderNumber" class="form-label">Order Number:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="orderNumber"
+                name="orderNumber"
+                placeholder="Enter your order number"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <button type="button" class="btn btn-primary" id="trackButton">
+              Track My Order
+            </button>
+          </form>
+          <div id="orderInfo" class="mt-4">
+            <div class="alert alert-info">
+              <h5>Order Status:</h5>
+              <p id="orderStatus"></p>
+            </div>
+            <div class="alert alert-info">
+              <h5>Tracking Number:</h5>
+              <p id="trackingNumber"></p>
+            </div>
+            <div class="alert alert-info">
+              <h5>Estimated Delivery:</h5>
+              <p id="estimatedDelivery"></p>
+            </div>
+            <div class="order-details">
+              <h4>Order Details</h4>
+              <div class="image-container">
+                <img
+                  class="product-image"
+                  src="images/wooden-stakes.jpg"
+                  alt="Product Image"
+                />
+              </div>
+              <p style="font-size: large;">Product: Wooden Stakes- Set of 2</p>
+              <p style="font-size: large;">Amount: INR 300</p>
+              <p style="font-size: large;">Quantity: 1</p>
+              <p style="font-size: large;">Payment Method: UPI</p>
+            </div>
+
+            <div id="errorAlert" class="alert alert-danger">
+              <p>Order not found. Please check your order details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const orderTrackingData = {
+        orderNumber: "123456",
+        email: "sample@email.com",
+        status: "Shipped",
+        trackingNumber: "XYZ123456",
+        estimatedDelivery: "October 31, 2023",
+      };
+
+      const trackButton = document.getElementById("trackButton");
+      const orderInfo = document.getElementById("orderInfo");
+      const orderStatus = document.getElementById("orderStatus");
+      const trackingNumber = document.getElementById("trackingNumber");
+      const estimatedDelivery = document.getElementById("estimatedDelivery");
+      const errorAlert = document.getElementById("errorAlert");
+
+      trackButton.addEventListener("click", function () {
+        const enteredOrderNumber = document.getElementById("orderNumber").value;
+        const enteredEmail = document.getElementById("email").value;
+
+        if (true) {
+          
+          orderStatus.textContent = orderTrackingData.status;
+          trackingNumber.textContent = orderTrackingData.trackingNumber;
+          estimatedDelivery.textContent = orderTrackingData.estimatedDelivery;
+
+          
+          orderInfo.style.display = "block";
+          errorAlert.style.display = "none";
+        } else {
+          
+          orderInfo.style.display = "none";
+          errorAlert.style.display = "block";
+        }
+      });
+    </script>
+  </body>
+</html>
