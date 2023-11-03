@@ -328,7 +328,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     align-items:flex-start;
-    padding : 30px;
+    padding : 20px;
     background-image: url(images/journal-for-banner.jpeg);
     width: 300px;
     height: 50vh; 
@@ -408,4 +408,17 @@
   #newsletter button:hover{
     color: #FF0000;
     cursor: pointer;
+  }
+
+  #footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #footer col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
   }
