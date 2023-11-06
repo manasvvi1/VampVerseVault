@@ -550,6 +550,9 @@
     background-color: #950101;
     color: whitesmoke;
   }
+  #prodetails .single-pro-details button:hover{
+    background-color: #FF0000;
+  }
   #prodetails .single-pro-details input:focus{
     outline: none;
   }
