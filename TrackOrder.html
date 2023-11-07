@@ -150,6 +150,10 @@
               <p id="trackingNumber"></p>
             </div>
             <div class="alert alert-info">
+              <h5>Delivery Address:</h5>
+              <p id="deliveryAddress"></p>
+            </div>
+            <div class="alert alert-info">
               <h5>Estimated Delivery:</h5>
               <p id="estimatedDelivery"></p>
             </div>
@@ -181,6 +185,7 @@
         email: "sample@email.com",
         status: "Shipped",
         trackingNumber: "XYZ123456",
+        deliveryAddress: "123 Main Street, Cityville, CA 12345, United States",
         estimatedDelivery: "October 31, 2023",
       };
 
@@ -188,6 +193,7 @@
       const orderInfo = document.getElementById("orderInfo");
       const orderStatus = document.getElementById("orderStatus");
       const trackingNumber = document.getElementById("trackingNumber");
+      const deliveryAddress = document.getElementById("deliveryAddress")
       const estimatedDelivery = document.getElementById("estimatedDelivery");
       const errorAlert = document.getElementById("errorAlert");
 
@@ -199,6 +205,7 @@
           
           orderStatus.textContent = orderTrackingData.status;
           trackingNumber.textContent = orderTrackingData.trackingNumber;
+          deliveryAddress.textContent = orderTrackingData.deliveryAddress;
           estimatedDelivery.textContent = orderTrackingData.estimatedDelivery;
 
           
