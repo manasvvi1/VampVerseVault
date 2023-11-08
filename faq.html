@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VampVerseVault: a E-commerce Website for Vampires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style>
+        body {
+          background-color: #aa5656; 
+          color: #ff0000; 
+        }
+        #about-us {
+          background-color: #3d0000; 
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+      </style>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="images/logo-square-without-title.png" class="logo" id="logo" height="50"
+                width="50" /></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Shop By Category </a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Blood</a></li>
+                        <li><a href="#">Daylight Bracelets</a></li>
+                        <li><a href="#">Daylight rings</a></li>
+                        <li><a href="#">Daylight Pendants</a></li>
+                        <li><a href="#">Vervain Proof Jackets</a></li>
+                        <li><a href="#">Vervain Proof Boots</a></li>
+                        <li><a href="#">Wolfsbane Proof Jackets</a></li>
+                        <li><a href="#">Wolfsbane Proof Boots</a></li>
+                        <li><a href="#">Apothecary</a></li>
+                        <li><a href="#">Klaus's Blood</a></li>
+                        <li><a href="#">Wooden Stake</a></li>
+                        <li><a href="#">White oak</a></li>
+                        <li><a href="#">Silver Dagger</a></li>
+                        <li><a href="#">Journals</a></li>
+                        <li><a href="#">Gilbert Rings</a></li>
+                        <li><a href="#">Traveler's knife</a></li>
+                        <li><a href="#">Vampire Compass</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="TrackOrder.html">Track Your Order</a></li>
+                <li><a href="AllProducts.html">All Products</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="sign-in.html">Sign in</a></li>
+                <li><a href="Cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <h2 class="faq-heading text-center" style="text-shadow: 2px 2px 4px black; margin-top: 10px;">FAQ - Vampire Products</h2>
+        <section class="faq-container">
+            <!-- Custom styling for FAQ items -->
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                What payment methods do you accept?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse1" class="collapse" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We accept a variety of payment methods, including major credit cards (Visa, MasterCard, American Express), PayPal, and secure online payment gateways to ensure a hassle-free and secure checkout experience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                How do I place an order for vampire-themed merchandise on your website?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            To place an order, simply browse our product catalog, select the items you'd like to purchase, and add them to your cart. Once you're ready, click on the cart icon, review your selections, and proceed to checkout. Follow the on-screen prompts to complete your order.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                What is your shipping policy?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our shipping policy includes flat-rate shipping within the continental US, with options for expedited shipping at an additional cost. For detailed shipping information, including international rates, delivery times, and tracking, please refer to our Shipping Policy.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                Do you offer returns or exchanges?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, we offer a hassle-free return and exchange policy. If you are not completely satisfied with your purchase, please refer to our Return and Exchange Policy for detailed instructions and conditions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                Are your products high quality and durable?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse5" class="collapse" aria-labelledby="faqHeading5" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our products are carefully selected for their quality and durability. We take pride in offering vampire-themed merchandise that meets our quality standards. For specific product details, please refer to the individual product descriptions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                                What is your privacy and data protection policy?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse6" class="collapse" aria-labelledby="faqHeading6" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We take your privacy and data protection seriously. Please review our Privacy Policy to learn about the measures we take to safeguard your personal information.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                                Are these products safe for kids or suitable for all ages?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse7" class="collapse" aria-labelledby="faqHeading7" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Our products vary in suitability for different age groups. We provide age recommendations and safety information in the product descriptions. Some products may not be suitable for children, so please read the product details carefully.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+                                Can I track my order after it's been shipped?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse8" class="collapse" aria-labelledby="faqHeading8" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, you can track your order after it has been shipped. We will provide you with a tracking number once your order is dispatched. You can use this tracking number to monitor the status of your delivery.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse9" aria-expanded="false" aria-controls="faqCollapse9">
+                                Do you have a customer support team for assistance?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse9" class="collapse" aria-labelledby="faqHeading9" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Absolutely! Our customer support team is here to help. You can reach us through our Contact Us page, and we'll be happy to assist you with any questions or concerns.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="faq-item my-2 mx-5">
+                <div class="card bg-dark text-light">
+                    <div class="card-header" id="faqHeading3">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#faqCollapse10" aria-expanded="false" aria-controls="faqCollapse10">
+                                Are there any discounts or loyalty programs for returning customers?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="faqCollapse10" class="collapse" aria-labelledby="faqHeading10" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, we value our loyal customers. We offer exclusive discounts and a loyalty program for returning customers. Check out our Rewards and Discounts page to learn more about how you can save on your future purchases.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+           
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
