@@ -126,9 +126,10 @@
                         </div>
                 
                     </div>
-            
+
+                    
                     <!--yaha checkout.html ko link karna hai-->
-                    <input type="submit" value="proceed to checkout" class="submit-btn">
+                    <a href="checkout.html"><input type="button" value="proceed to checkout" class="submit-btn"></a>
             
                 </form>
             
@@ -186,7 +187,18 @@
                     <p>© 2023, VVV etc - HTML CSS E-commerce site</p>
                 </div>
             </footer>
-    
+            
+            <script>
+                // Get the element by its ID
+                const checkoutButton = document.getElementById("checkout-button");
+              
+                // Add a click event listener
+                checkoutButton.addEventListener("click", function() {
+                  // Redirect to the desired page when the button is clicked
+                  window.location.href = "checkout.html";
+                });
+              </script>
+              
             
         </main>
             <script src = "script.js"></script>

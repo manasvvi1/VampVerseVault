@@ -279,6 +279,10 @@
     background-size: cover;
     background-position: center;
   }
+  #banner h1{
+    color: whitesmoke;
+    padding-bottom: 10px;
+  }
   #banner h4{
     color: whitesmoke;
     font-size: 16px;
@@ -559,4 +563,76 @@
   }
   #prodetails .single-pro-details span{
     line-height: 25px;
+  }
+
+  #auction-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #auction-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items:flex-start;
+    padding : 30px;
+    background-image: url(images/moonstone.png);
+    min-width: 540px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+  }
+  #auction-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items:flex-start;
+    padding : 30px;
+    
+    background-image: url(images/ascendant.png);
+    width: 300px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+  }
+  #auction-banner .banner-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items:flex-start;
+    padding : 30px;
+    background-image: url(images/cure.jpg);
+    width: 300px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+  }
+  #auction-banner .banner-box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-items:flex-start;
+    padding : 30px;
+    background-image: url(images/phoenix-stone.png);
+    width: 300px;
+    height: 50vh; 
+    background-size: cover;
+    background-position: center;
+  }
+  #auction-banner h2{
+    padding-bottom: 7px;
+    color: whitesmoke;
+  }
+  #auction-banner span{
+    padding-bottom: 15px;
+    color: whitesmoke;
+  }
+  #auction-banner .banner-box:hover button{
+    background-color: #950101;
+    border: 1px solid;
+    cursor: pointer;
   }
